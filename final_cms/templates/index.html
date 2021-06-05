@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %} Home{% endblock title %} {% block body %}
+
+
+<div class="container-sm my-5">
+    <div class="container">
+        <h1 style="margin-left:15%; margin-bottom: 50px; color:rgb(190, 125, 26)">{% if session['name'] %} Welcome to Courier Tracking System, {{ session['name'] }} {% else %} welcome to Courier Tracking System{% endif %}
+        </h1>
+    </div>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width:50%; margin-left:20%; ">
+        <button class="btn btn-outline-primary me-2" type="search">search</button>
+    </form>
+
+</div>
+
+{% endblock body %}
